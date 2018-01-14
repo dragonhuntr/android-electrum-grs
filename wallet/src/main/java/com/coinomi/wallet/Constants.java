@@ -4,7 +4,7 @@ import android.text.format.DateUtils;
 
 import com.coinomi.core.coins.CoinID;
 import com.coinomi.core.coins.CoinType;
-import com.coinomi.core.coins.GroestlCoinMain;
+import com.coinomi.core.coins.KotoMain;
 import com.coinomi.core.network.CoinAddress;
 import com.coinomi.stratumj.ServerAddress;
 import com.google.common.collect.ImmutableList;
@@ -73,14 +73,13 @@ public class Constants {
     public static final char CURRENCY_MINUS_SIGN = '-';
 
     public static final String MARKET_APP_URL = "market://details?id=%s";
-    public static final String BINARY_URL = "https://github.com/HashEngineering/coinomi-android/releases";
+    public static final String BINARY_URL = "https://github.com/dragonhuntr/android-electrum-grs/releases";
 
     public static final String VERSION_URL = "http://coinomi.com/version";
 
-    // TODO move to resource files
+    // TODO change server
     public static final List<CoinAddress> DEFAULT_COINS_SERVERS = ImmutableList.of(
-            new CoinAddress(GroestlCoinMain.get(),  new ServerAddress("electrum2.groestlcoin.org", 50001),
-                                                    new ServerAddress("electrum1.groestlcoin.org", 50001))
+            new CoinAddress(KotoMain.get(),  new ServerAddress("electrum2.groestlcoin.org", 50001),
     );
 
     public static final HashMap<CoinType, Integer> COINS_ICONS;
@@ -88,15 +87,15 @@ public class Constants {
     static {
         COINS_ICONS = new HashMap<CoinType, Integer>();
 
-        COINS_ICONS.put(CoinID.GROESTLCOIN_MAIN.getCoinType(), R.drawable.groestlcoin);
+        COINS_ICONS.put(CoinID.KOTOCOIN_MAIN.getCoinType(), R.drawable.koto);
 
         COINS_BLOCK_EXPLORERS = new HashMap<CoinType, String>();
 
-        COINS_BLOCK_EXPLORERS.put(CoinID.GROESTLCOIN_MAIN.getCoinType(), "https://chainz.cryptoid.info/grs/tx.dws?%s");
+        COINS_BLOCK_EXPLORERS.put(CoinID.KOTO_MAIN.getCoinType(), "https://insight.kotocoin.info/");
     }
 
-    public static final CoinType DEFAULT_COIN = GroestlCoinMain.get();
-    public static final List<CoinType> DEFAULT_COINS = ImmutableList.of((CoinType) GroestlCoinMain.get());
+    public static final CoinType DEFAULT_COIN = KotoMain.get();
+    public static final List<CoinType> DEFAULT_COINS = ImmutableList.of((CoinType) KotoMain.get());
     public static final ArrayList<String> DEFAULT_TEST_COIN_IDS = Lists.newArrayList(
             /*BitcoinTest.get().getId(),
             LitecoinTest.get().getId(),
@@ -104,6 +103,6 @@ public class Constants {
     );
 
     public static final List<CoinType> SUPPORTED_COINS = ImmutableList.of(
-            (CoinType)GroestlCoinMain.get()
+            (CoinType)KotoCoinMain.get()
     );
 }
