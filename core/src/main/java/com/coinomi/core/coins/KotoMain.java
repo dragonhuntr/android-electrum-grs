@@ -2,17 +2,17 @@
     private KotoMain() {
         id = "koto.main";
 
-        addressHeader = ?;
-        p2shHeader = ?;
+        addressHeader = 6198;
+        p2shHeader = 6203;
         acceptableAddressCodes = new int[] { addressHeader, p2shHeader };
-        spendableCoinbaseDepth = ?;
+        spendableCoinbaseDepth = 100;
 
         family = KotoFamily.get();
         name = "Koto";
         symbol = "KOTO";
         uriScheme = "koto";
         bip44Index = 133;
-        unitExponent = ?;
+        unitExponent = 8;
         feePerKb = value(100000);
         minNonDust = value(1000); // 0.00001 KOTO mininput
         softDustLimit = value(100000); // 0.001 KOTO
