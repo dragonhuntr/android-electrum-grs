@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name" translatable="false">Groestlcoin Electrum GRS</string>
-    <string name="app_package" translatable="false">hashengineering.groestlcoin.wallet.electrum</string>
+    <string name="app_name" translatable="false">Koto Wallet</string>
+    <string name="app_package" translatable="false">limit.koto.wallet.electrum</string>
     <string name="almost_equal_to" translatable="false">≈</string>
     <string name="action_scan_qr_code">Scan</string>
     <string name="action_share">Share</string>
@@ -67,7 +67,7 @@
     <string name="trade">exchange</string>
     <string name="receive">receive</string>
     <!-- Welcome fragment -->
-    <string name="welcome_text">Welcome to Groestlcoin Electrum GRS wallet</string>
+    <string name="welcome_text">Welcome to Android Koto wallet</string>
     <string name="create_wallet">Create a new wallet</string>
     <string name="restore_wallet">Restore a wallet</string>
     <string name="test_wallet">Test wallet</string>
@@ -93,9 +93,9 @@
     <string name="restore_error">Could not verify your recovery phrase. %1$s</string>
     <string name="extra_entropy">Extra entropy</string>
     <!-- Wallet activity -->
-    <string name="test_wallet_message">This is a test wallet, where you can send and receive testnet Groestlcoins.\n\nIf you want to use the wallet with real money please go to: <b>Settings > Restore wallet > Create a new wallet</b>.</string>
+    <string name="test_wallet_message">This is a test wallet, where you can send and receive testnet Kotos.\n\nIf you want to use the wallet with real money please go to: <b>Settings > Restore wallet > Create a new wallet</b>.</string>
     <string name="wallet_update_title">New version available</string>
-    <string name="wallet_update_message">A new version of Groestlcoin Electrum GRS is available, it contains new features and fixes.</string>
+    <string name="wallet_update_message">A new version of Koto Wallet is available, it contains new features and fixes.</string>
     <string name="pay_with">Send with</string>
     <string name="exchange_and_pay_title">Exchange and send</string>
     <!-- PayToDialog-->
@@ -182,11 +182,11 @@
         <item quantity="other">%d seconds</item>
     </plurals>
     <!-- About Activity -->
-    <string name="title_activity_about">About Groestlcoin Electrum GRS</string>
-    <string name="app_name_long">Groestlcoin Electrum GRS for Android</string>
+    <string name="title_activity_about">About Koto Wallet</string>
+    <string name="app_name_long">Electrum Koto Wallet for Android</string>
     <string name="about_licence">An open source project\nhttps://github.com/HashEngineering/coinomi-android\nSource code licensed under GNU General Public License 3</string>
     <string name="about_credits_nubits"></string>
-    <string name="about_credits_bitcoinj">Uses GroestlcoinJ library\nhttps://github.com/HashEngineering/groestlcoinj/ a fork of bitcoinj</string>
+    <string name="about_credits_bitcoinj">Uses</string>
     <string name="about_credits_electrum">Uses Electrum-GRS server software\nhttps://github.com/GroestlCoin/electrum-grs-server</string>
     <string name="about_credits_schildbach">Influenced by Coinomi\nhttps://github.com/coinomi/coinomi-android/</string>
 
@@ -228,7 +228,7 @@
     <string name="exchange_rates_load_error">Could not load exchange rates</string>
     <string name="exchange_rates_empty_search">Could not find exchange rate</string>
     <!-- Select Coins -->
-    <string name="select_coins">Groestlcoin Electrum-GRS uses Electrum-GRS servers for transactions. Select Groestlcoin and you agree to use Electrum-GRS servers for transactions.</string>
+    <string name="select_coins">Koto Wallet uses Electrum-GRS servers for transactions. Select Koto and you agree to use Electrum-GRS servers for transactions.</string>
 
     <!-- Previous Addresses -->
     <string name="title_activity_previous_addresses">My previous addresses</string>
