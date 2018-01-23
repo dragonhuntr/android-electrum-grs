@@ -79,7 +79,7 @@ public class Constants {
 
     // TODO change server
     public static final List<CoinAddress> DEFAULT_COINS_SERVERS = ImmutableList.of(
-            new CoinAddress(KotoMain.get(),  new ServerAddress("electrum2.groestlcoin.org", 50001),
+            new CoinAddress(KotoMain.get(),  new ServerAddress("kotocoin.info", 50001),
     );
 
     public static final HashMap<CoinType, Integer> COINS_ICONS;
